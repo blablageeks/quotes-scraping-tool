@@ -1,6 +1,6 @@
 import argparse
 
-from providers.good_reads.good_reads_provider import GoodReadsProvider
+from src.providers.good_reads.good_reads_provider import GoodReadsProvider
 
 
 def main():

@@ -24,7 +24,7 @@ class QuoteProvider(ABC):
                         return BeautifulSoup(response.text, "html.parser")
             except httpx.RequestError as httpx_error:
                 print(
-                    f"Failed to connect with remote server. Retrying ({retry_count + 1}/{max_retries})...\n Here our preferred quote: "
+                    f"Failed to connect with remote server. Retrying ({retry_count + 1}/{max_retries})..."
                 )
             finally:
                 client.close()
